@@ -1,3 +1,3 @@
 test('this test will always fail', () => {
-  expect(true).toBe(false);
+    expect(false).toBe(true);
 });
