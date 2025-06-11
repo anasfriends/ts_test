@@ -21,6 +21,7 @@
     "@types/express-session": "^1.18.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.0.0",
+    "jest-github-actions-reporter": "^1.0.3",
     "ts-jest": "^29.3.4",
     "typescript": "^5.8.3"
   }

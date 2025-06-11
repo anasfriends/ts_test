@@ -10,4 +10,8 @@ export default {
       useESM: true,
     }],
   },
+  reporters: process.env.GITHUB_ACTIONS
+    ? ['jest-github-actions-reporter']
+    : ['default'],
+  testLocationInResults: true
 };
