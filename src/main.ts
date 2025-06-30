@@ -1,4 +1,13 @@
 import session from "express-session";
 import express from "express";
 
-console.log("HELLO WORLD")
+function insecureFunction() {
+    const sessionMiddleware = session({ 
+        secret: "changeit", 
+        resave: false, 
+        saveUninitialized: false 
+    });
+    // create an app that uses the session middleware
+    const app = express();
+    app.use(sessionMiddleware);
+}
